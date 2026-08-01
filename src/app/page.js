@@ -9,11 +9,9 @@ export default function Home() {
   // Form State
   const [formData, setFormData] = useState({
     fullName: '',
-    email: '',
     phone: '',
-    modelInterest: '',
-    budgetRange: '',
-    notes: '',
+    email: '',
+    serviceProduct: '',
   });
 
   const [formErrors, setFormErrors] = useState({});
@@ -110,10 +108,9 @@ export default function Home() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!formData.fullName.trim()) errors.fullName = true;
-    if (!emailRegex.test(formData.email.trim())) errors.email = true;
     if (formData.phone.trim().length < 7) errors.phone = true;
-    if (!formData.modelInterest) errors.modelInterest = true;
-    if (!formData.budgetRange) errors.budgetRange = true;
+    if (!emailRegex.test(formData.email.trim())) errors.email = true;
+    if (!formData.serviceProduct.trim()) errors.serviceProduct = true;
 
     setFormErrors(errors);
 
@@ -611,7 +608,7 @@ export default function Home() {
 
                   <form className="quote-form" onSubmit={handleFormSubmit} noValidate>
                     <div className={`form-group ${formErrors.fullName ? 'invalid' : ''}`}>
-                      <label className="form-label">Full Name *</label>
+                      <label className="form-label">Name *</label>
                       <input
                         type="text"
                         className="form-input"
@@ -619,23 +616,11 @@ export default function Home() {
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                       />
-                      <span className="error-msg">Please enter your full name.</span>
-                    </div>
-
-                    <div className={`form-group ${formErrors.email ? 'invalid' : ''}`}>
-                      <label className="form-label">Email Address *</label>
-                      <input
-                        type="email"
-                        className="form-input"
-                        placeholder="e.g. rohan@example.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      />
-                      <span className="error-msg">Please enter a valid email.</span>
+                      <span className="error-msg">Please enter your name.</span>
                     </div>
 
                     <div className={`form-group ${formErrors.phone ? 'invalid' : ''}`}>
-                      <label className="form-label">Phone Number *</label>
+                      <label className="form-label">Phone No. *</label>
                       <input
                         type="tel"
                         className="form-input"
@@ -646,46 +631,33 @@ export default function Home() {
                       <span className="error-msg">Please enter a valid phone number.</span>
                     </div>
 
-                    <div className={`form-group ${formErrors.modelInterest ? 'invalid' : ''}`}>
-                      <label className="form-label">Model or Service of Interest *</label>
-                      <select
-                        className="form-select"
-                        value={formData.modelInterest}
-                        onChange={(e) => setFormData({ ...formData, modelInterest: e.target.value })}
-                      >
-                        <option value="" disabled>Select a product or service</option>
-                        <optgroup label="Certified Laptops">
-                          <option value="Dell Latitude 7490 (₹28,999)">Dell Latitude 7490 (₹28,999)</option>
-                          <option value="Lenovo ThinkPad T480 (₹24,999)">Lenovo ThinkPad T480 (₹24,999)</option>
-                          <option value="HP EliteBook 840 G5 (₹22,999)">HP EliteBook 840 G5 (₹22,999)</option>
-                        </optgroup>
-                        <optgroup label="IT Services">
-                          <option value="Laptop Repair Service">Laptop Repair Service</option>
-                          <option value="Software Solutions">Software Solutions</option>
-                          <option value="Networking Services">Networking Services</option>
-                        </optgroup>
-                      </select>
-                      <span className="error-msg">Please select a model/service.</span>
+                    <div className={`form-group ${formErrors.email ? 'invalid' : ''}`}>
+                      <label className="form-label">Email ID *</label>
+                      <input
+                        type="email"
+                        className="form-input"
+                        placeholder="e.g. info@utkarshcomputers.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      />
+                      <span className="error-msg">Please enter a valid email.</span>
                     </div>
 
-                    <div className={`form-group full-width ${formErrors.budgetRange ? 'invalid' : ''}`}>
-                      <label className="form-label">Target Budget Range *</label>
-                      <select
-                        className="form-select"
-                        value={formData.budgetRange}
-                        onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
-                      >
-                        <option value="" disabled>Select target budget</option>
-                        <option value="Under ₹20,000">Under ₹20,000</option>
-                        <option value="₹20,000 - ₹30,000">₹20,000 - ₹30,000</option>
-                        <option value="₹30,000+">₹30,000+</option>
-                      </select>
-                      <span className="error-msg">Please select a budget range.</span>
+                    <div className={`form-group ${formErrors.serviceProduct ? 'invalid' : ''}`}>
+                      <label className="form-label">Service or Product you want *</label>
+                      <input
+                        type="text"
+                        className="form-input"
+                        placeholder="e.g. Dell Latitude 7490 or Laptop Repair"
+                        value={formData.serviceProduct}
+                        onChange={(e) => setFormData({ ...formData, serviceProduct: e.target.value })}
+                      />
+                      <span className="error-msg">Please type the service or product you want.</span>
                     </div>
 
-                    <div className="form-group full-width">
-                      <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-                        Request Free Quote
+                    <div className="form-group full-width" style={{ marginTop: '0.5rem' }}>
+                      <button type="submit" className="btn btn-primary" style={{ width: '100%', fontSize: '1.05rem', padding: '1rem' }}>
+                        Submit
                       </button>
                     </div>
                   </form>
@@ -694,15 +666,16 @@ export default function Home() {
                 <div className="thank-you-box" style={{ display: 'block' }}>
                   <div className="thank-you-icon">✓</div>
                   <h3>Thank You, {formData.fullName}!</h3>
-                  <p>Your quote request has been received. Our team will contact you shortly.</p>
+                  <p>Your request has been received. Our team will contact you shortly.</p>
                   <div className="quote-summary-card">
-                    <strong>Quote Summary:</strong><br />
+                    <strong>Submission Details:</strong><br />
                     • <strong>Ref ID:</strong> {quoteReference}<br />
-                    • <strong>Selected Item:</strong> {formData.modelInterest}<br />
-                    • <strong>Budget:</strong> {formData.budgetRange}
+                    • <strong>Phone No.:</strong> {formData.phone}<br />
+                    • <strong>Email ID:</strong> {formData.email}<br />
+                    • <strong>Service / Product:</strong> {formData.serviceProduct}
                   </div>
                   <button className="btn btn-secondary" onClick={() => setSubmitted(false)}>
-                    Submit Another Quote
+                    Submit Another Request
                   </button>
                 </div>
               )}

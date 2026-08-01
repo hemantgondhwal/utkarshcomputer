@@ -2185,70 +2185,38 @@
           <!-- Client-Side Validated Form -->
           <form id="quoteForm" class="quote-form" novalidate>
             
-            <!-- Full Name -->
+            <!-- Name -->
             <div class="form-group" id="groupFullName">
-              <label for="fullName" class="form-label">Full Name *</label>
-              <input type="text" id="fullName" class="form-input" placeholder="e.g. Sarah Jenkins" required />
-              <span class="error-msg">Please enter your full name.</span>
+              <label for="fullName" class="form-label">Name *</label>
+              <input type="text" id="fullName" class="form-input" placeholder="e.g. Rohan Sharma" required />
+              <span class="error-msg">Please enter your name.</span>
             </div>
 
-            <!-- Email Address -->
-            <div class="form-group" id="groupEmail">
-              <label for="email" class="form-label">Email Address *</label>
-              <input type="email" id="email" class="form-input" placeholder="e.g. sarah@example.com" required />
-              <span class="error-msg">Please enter a valid email address.</span>
-            </div>
-
-            <!-- Phone Number -->
+            <!-- Phone No. -->
             <div class="form-group" id="groupPhone">
-              <label for="phone" class="form-label">Phone Number *</label>
-              <input type="tel" id="phone" class="form-input" placeholder="e.g. (555) 019-2834" required />
+              <label for="phone" class="form-label">Phone No. *</label>
+              <input type="tel" id="phone" class="form-input" placeholder="e.g. +91 87007 47243" required />
               <span class="error-msg">Please enter a valid phone number.</span>
             </div>
 
-            <!-- Model of Interest Dropdown -->
-            <div class="form-group" id="groupModel">
-              <label for="modelInterest" class="form-label">Model or Service of Interest *</label>
-              <select id="modelInterest" class="form-select" required>
-                <option value="" disabled selected>Select a product or service</option>
-                <optgroup label="Certified Laptops">
-                  <option value="Dell Latitude 7490 (₹28,999)">Dell Latitude 7490 (₹28,999)</option>
-                  <option value="Lenovo ThinkPad T480 (₹24,999)">Lenovo ThinkPad T480 (₹24,999)</option>
-                  <option value="HP EliteBook 840 G5 (₹22,999)">HP EliteBook 840 G5 (₹22,999)</option>
-                  <option value="Multiple / Bulk Order">Multiple / Bulk Student Order</option>
-                </optgroup>
-                <optgroup label="IT Services">
-                  <option value="Laptop Repair Service">1. Laptop Repair Service</option>
-                  <option value="Software Solutions & Setup">2. Software Solutions &amp; Setup</option>
-                  <option value="Networking & Wi-Fi Setup">3. Networking &amp; Wi-Fi Solutions</option>
-                </optgroup>
-              </select>
-              <span class="error-msg">Please select a model of interest.</span>
+            <!-- Email ID -->
+            <div class="form-group" id="groupEmail">
+              <label for="email" class="form-label">Email ID *</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. info@utkarshcomputers.com" required />
+              <span class="error-msg">Please enter a valid email address.</span>
             </div>
 
-            <!-- Budget Range Dropdown -->
-            <div class="form-group full-width" id="groupBudget">
-              <label for="budgetRange" class="form-label">Budget Range *</label>
-              <select id="budgetRange" class="form-select" required>
-                <option value="" disabled selected>Select your target budget</option>
-                <option value="Under ₹25,000">Under ₹25,000</option>
-                <option value="₹25,000 - ₹40,000">₹25,000 - ₹40,000</option>
-                <option value="₹40,000 - ₹60,000">₹40,000 - ₹60,000</option>
-                <option value="₹60,000+">₹60,000+</option>
-              </select>
-              <span class="error-msg">Please select your budget range.</span>
-            </div>
-
-            <!-- Message Textarea -->
-            <div class="form-group full-width" id="groupMessage">
-              <label for="message" class="form-label">Message / Custom Requirements</label>
-              <textarea id="message" class="form-textarea" placeholder="Tell us about your specific RAM, SSD, or OS configuration needs..."></textarea>
+            <!-- Service or Product you want -->
+            <div class="form-group" id="groupServiceProduct">
+              <label for="serviceProduct" class="form-label">Service or Product you want *</label>
+              <input type="text" id="serviceProduct" class="form-input" placeholder="e.g. Dell Latitude 7490 or Laptop Repair" required />
+              <span class="error-msg">Please type the service or product you want.</span>
             </div>
 
             <!-- Submit Button -->
             <div class="form-group full-width" style="margin-top: 0.5rem;">
               <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 1rem;">
-                Request a Quote
+                Submit
               </button>
             </div>
 
@@ -2463,10 +2431,9 @@
 
         // Field references
         const fullNameInput = document.getElementById('fullName');
-        const emailInput = document.getElementById('email');
         const phoneInput = document.getElementById('phone');
-        const modelSelect = document.getElementById('modelInterest');
-        const budgetSelect = document.getElementById('budgetRange');
+        const emailInput = document.getElementById('email');
+        const serviceProductInput = document.getElementById('serviceProduct');
 
         // Helper function to set field error state
         const validateField = (input, groupID, condition) => {
@@ -2481,25 +2448,24 @@
 
         // Execute validations
         validateField(fullNameInput, 'groupFullName', fullNameInput.value.trim() !== '');
-        validateField(emailInput, 'groupEmail', emailRegex.test(emailInput.value.trim()));
         validateField(phoneInput, 'groupPhone', phoneInput.value.trim().length >= 7);
-        validateField(modelSelect, 'groupModel', modelSelect.value !== '');
-        validateField(budgetSelect, 'groupBudget', budgetSelect.value !== '');
+        validateField(emailInput, 'groupEmail', emailRegex.test(emailInput.value.trim()));
+        validateField(serviceProductInput, 'groupServiceProduct', serviceProductInput.value.trim() !== '');
 
         // If form is valid, submit client-side & render confirmation
         if (isValid) {
           const nameVal = fullNameInput.value.trim();
+          const phoneVal = phoneInput.value.trim();
           const emailVal = emailInput.value.trim();
-          const modelVal = modelSelect.value;
-          const budgetVal = budgetSelect.value;
+          const serviceProductVal = serviceProductInput.value.trim();
 
           // Populate Summary
           quoteSummary.innerHTML = `
-            <strong>Quote Details Summary:</strong><br/>
-            • <strong>Customer Name:</strong> ${nameVal}<br/>
-            • <strong>Contact Email:</strong> ${emailVal}<br/>
-            • <strong>Selected Model:</strong> ${modelVal}<br/>
-            • <strong>Target Budget:</strong> ${budgetVal}<br/>
+            <strong>Submission Details:</strong><br/>
+            • <strong>Name:</strong> ${nameVal}<br/>
+            • <strong>Phone No.:</strong> ${phoneVal}<br/>
+            • <strong>Email ID:</strong> ${emailVal}<br/>
+            • <strong>Service / Product:</strong> ${serviceProductVal}<br/>
             • <strong>Reference ID:</strong> #RT-${Math.floor(100000 + Math.random() * 900000)}
           `;
 
