@@ -2486,28 +2486,28 @@
             <!-- Name -->
             <div class="form-group" id="groupFullName">
               <label for="fullName" class="form-label">Name *</label>
-              <input type="text" id="fullName" class="form-input" placeholder="e.g. Rohan Sharma" required />
+              <input type="text" id="fullName" name="Name" class="form-input" placeholder="e.g. Rohan Sharma" required />
               <span class="error-msg">Please enter your name.</span>
             </div>
 
             <!-- Phone No. -->
             <div class="form-group" id="groupPhone">
               <label for="phone" class="form-label">Phone No. *</label>
-              <input type="tel" id="phone" class="form-input" placeholder="e.g. +91 87007 47243" required />
+              <input type="tel" id="phone" name="Phone" class="form-input" placeholder="e.g. +91 87007 47243" required />
               <span class="error-msg">Please enter a valid phone number.</span>
             </div>
 
             <!-- Email ID -->
             <div class="form-group" id="groupEmail">
               <label for="email" class="form-label">Email ID *</label>
-              <input type="email" id="email" class="form-input" placeholder="e.g. Utkarshcomputers2011@gmail.com" required />
+              <input type="email" id="email" name="Email" class="form-input" placeholder="e.g. Utkarshcomputers2011@gmail.com" required />
               <span class="error-msg">Please enter a valid email address.</span>
             </div>
 
             <!-- Service or Product you want -->
             <div class="form-group" id="groupServiceProduct">
               <label for="serviceProduct" class="form-label">Service or Product you want *</label>
-              <input type="text" id="serviceProduct" class="form-input" placeholder="e.g. Dell Latitude 7490 or Laptop Repair" required />
+              <input type="text" id="serviceProduct" name="Service_Product" class="form-input" placeholder="e.g. Dell Latitude 7490 or Laptop Repair" required />
               <span class="error-msg">Please type the service or product you want.</span>
             </div>
 
@@ -2774,22 +2774,22 @@
           thankYouMessage.style.display = 'block';
 
           // Dispatch email notification to Utkarshcomputers2011@gmail.com
+          const emailData = new FormData();
+          emailData.append('Name', nameVal);
+          emailData.append('Phone Number', phoneVal);
+          emailData.append('Email ID', emailVal);
+          emailData.append('Service or Product Wanted', serviceProductVal);
+          emailData.append('Reference ID', refId);
+          emailData.append('_subject', `New Lead from ${nameVal} (${phoneVal}) - Utkarsh Computers`);
+          emailData.append('_captcha', 'false');
+          emailData.append('_template', 'table');
+
           fetch('https://formsubmit.co/ajax/Utkarshcomputers2011@gmail.com', {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-              'Customer Name': nameVal,
-              'Phone Number': phoneVal,
-              'Customer Email': emailVal,
-              'Service or Product Wanted': serviceProductVal,
-              'Reference ID': refId,
-              '_subject': `New Form Submission from ${nameVal} - Utkarsh Computers`,
-              '_template': 'table'
-            })
-          }).catch(err => console.error('Email dispatch error:', err));
+            body: emailData
+          }).then(res => res.json())
+            .then(data => console.log('Email sent successfully:', data))
+            .catch(err => console.error('Email dispatch error:', err));
         }
       });
 

@@ -120,22 +120,22 @@ export default function Home() {
       setSubmitted(true);
 
       // Dispatch email notification to Utkarshcomputers2011@gmail.com
+      const emailData = new FormData();
+      emailData.append('Name', formData.fullName);
+      emailData.append('Phone Number', formData.phone);
+      emailData.append('Email ID', formData.email);
+      emailData.append('Service or Product Wanted', formData.serviceProduct);
+      emailData.append('Reference ID', refId);
+      emailData.append('_subject', `New Lead from ${formData.fullName} (${formData.phone}) - Utkarsh Computers`);
+      emailData.append('_captcha', 'false');
+      emailData.append('_template', 'table');
+
       fetch('https://formsubmit.co/ajax/Utkarshcomputers2011@gmail.com', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          'Customer Name': formData.fullName,
-          'Phone Number': formData.phone,
-          'Customer Email': formData.email,
-          'Service or Product Wanted': formData.serviceProduct,
-          'Reference ID': refId,
-          '_subject': `New Form Submission from ${formData.fullName} - Utkarsh Computers`,
-          '_template': 'table'
-        })
-      }).catch(err => console.error('Email dispatch error:', err));
+        body: emailData
+      }).then(res => res.json())
+        .then(data => console.log('Email sent successfully:', data))
+        .catch(err => console.error('Email dispatch error:', err));
     }
   };
 
