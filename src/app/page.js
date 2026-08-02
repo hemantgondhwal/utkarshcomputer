@@ -203,7 +203,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subheadline">
-                30-day money-back guarantee, 1-year warranty, and rigorously tested devices. Premium performance engineered for budget-conscious students &amp; remote professionals.
+                30-day Replacement warranty, 6 Months manufacture warranty, and rigorously tested devices. Premium performance engineered for budget-conscious students &amp; remote professionals.
               </p>
 
               <div className="hero-cta-group">
