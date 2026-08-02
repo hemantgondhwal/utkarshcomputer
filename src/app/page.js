@@ -203,7 +203,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-subheadline">
-                30-day Replacement warranty, 6 Months manufacture warranty, and rigorously tested devices. Premium performance engineered for budget-conscious students &amp; remote professionals.
+                30-Day Replacement Support • 6-Month Manufacturer Warranty • Quality-Tested Devices. Reliable performance for students, professionals, and everyday use—all at a budget-friendly price.
               </p>
 
               <div className="hero-cta-group">

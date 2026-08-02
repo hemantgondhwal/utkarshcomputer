@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Utkarsh Computers - Quality Refurbished Laptops & IT Services',
-  description: 'Certified refurbished laptops (Dell, Lenovo, HP) at unbeatable prices with 6 Months manufacture warranty, 30-day Replacement warranty, and IT repair services in Dwarka, New Delhi.',
+  description: 'Certified refurbished laptops (Dell, Lenovo, HP) with 30-Day Replacement Support, 6-Month Manufacturer Warranty, and Quality-Tested Devices in Dwarka, New Delhi.',
 };
 
 export default function RootLayout({ children }) {
