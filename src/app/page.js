@@ -234,7 +234,6 @@ export default function Home() {
                     <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#ffffff' }}>Dell Latitude 7490</h3>
                     <p style={{ fontSize: '0.85rem', color: '#94a3b8' }}>Intel i7 • 16GB RAM • 512GB SSD</p>
                   </div>
-                  <span style={{ fontSize: '1.35rem', fontWeight: 800, color: '#38bdf8' }}>₹28,999</span>
                 </div>
               </div>
             </div>
