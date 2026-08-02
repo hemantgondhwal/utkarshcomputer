@@ -1183,10 +1183,11 @@ export default function Home() {
                   <p>Your request has been received. Our team will contact you shortly.</p>
                   <div className="quote-summary-card">
                     <strong>Submission Details:</strong><br />
-                    • <strong>Ref ID:</strong> {quoteReference}<br />
+                    • <strong>Name:</strong> {formData.fullName}<br />
                     • <strong>Phone No.:</strong> {formData.phone}<br />
                     • <strong>Email ID:</strong> {formData.email}<br />
-                    • <strong>Service / Product:</strong> {formData.serviceProduct}
+                    • <strong>Service / Product:</strong> {formData.serviceProduct}<br />
+                    • <strong>Ref ID:</strong> {quoteReference}
                   </div>
                   <button className="btn btn-secondary" onClick={() => setSubmitted(false)}>
                     Submit Another Request
