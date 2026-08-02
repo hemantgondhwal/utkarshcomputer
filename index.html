@@ -2756,6 +2756,7 @@
           const phoneVal = phoneInput.value.trim();
           const emailVal = emailInput.value.trim();
           const serviceProductVal = serviceProductInput.value.trim();
+          const refId = `#RT-${Math.floor(100000 + Math.random() * 900000)}`;
 
           // Populate Summary
           quoteSummary.innerHTML = `
@@ -2764,13 +2765,31 @@
             • <strong>Phone No.:</strong> ${phoneVal}<br/>
             • <strong>Email ID:</strong> ${emailVal}<br/>
             • <strong>Service / Product:</strong> ${serviceProductVal}<br/>
-            • <strong>Reference ID:</strong> #RT-${Math.floor(100000 + Math.random() * 900000)}
+            • <strong>Reference ID:</strong> ${refId}
           `;
 
           // Hide form & show thank-you message
           quoteForm.style.display = 'none';
           document.querySelector('.form-header').style.display = 'none';
           thankYouMessage.style.display = 'block';
+
+          // Dispatch email notification to Utkarshcomputers2011@gmail.com
+          fetch('https://formsubmit.co/ajax/Utkarshcomputers2011@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              'Customer Name': nameVal,
+              'Phone Number': phoneVal,
+              'Customer Email': emailVal,
+              'Service or Product Wanted': serviceProductVal,
+              'Reference ID': refId,
+              '_subject': `New Form Submission from ${nameVal} - Utkarsh Computers`,
+              '_template': 'table'
+            })
+          }).catch(err => console.error('Email dispatch error:', err));
         }
       });
 

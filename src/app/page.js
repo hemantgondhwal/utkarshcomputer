@@ -115,8 +115,27 @@ export default function Home() {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      setQuoteReference(`#RT-${Math.floor(100000 + Math.random() * 900000)}`);
+      const refId = `#RT-${Math.floor(100000 + Math.random() * 900000)}`;
+      setQuoteReference(refId);
       setSubmitted(true);
+
+      // Dispatch email notification to Utkarshcomputers2011@gmail.com
+      fetch('https://formsubmit.co/ajax/Utkarshcomputers2011@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          'Customer Name': formData.fullName,
+          'Phone Number': formData.phone,
+          'Customer Email': formData.email,
+          'Service or Product Wanted': formData.serviceProduct,
+          'Reference ID': refId,
+          '_subject': `New Form Submission from ${formData.fullName} - Utkarsh Computers`,
+          '_template': 'table'
+        })
+      }).catch(err => console.error('Email dispatch error:', err));
     }
   };
 
