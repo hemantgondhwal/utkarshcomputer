@@ -334,15 +334,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹38,999</span>
-                      <span className="original-price">₹1,15,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Precision%205550%20i7%2F10th%2F8GB%2F256GB%204GB%20GPU%20(₹38,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Precision%205550%20i7%2F10th%2F8GB%2F256GB%204GB%20GPU."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -374,15 +371,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹34,999</span>
-                      <span className="original-price">₹95,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205430%20i7%2F12th%2F16GB%2F512GB%20(₹34,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205430%20i7%2F12th%2F16GB%2F512GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -414,15 +408,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹26,999</span>
-                      <span className="original-price">₹75,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205420%20i5%2F11th%2F8GB%2F256GB%20(₹26,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205420%20i5%2F11th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -454,15 +445,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹23,999</span>
-                      <span className="original-price">₹68,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205410%20i5%2F10th%2F8GB%2F256GB%20(₹23,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205410%20i5%2F10th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -494,15 +482,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹21,999</span>
-                      <span className="original-price">₹65,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%207490%20i5%2F8th%2F8GB%2F256GB%20(₹21,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%207490%20i5%2F8th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -534,15 +519,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹20,999</span>
-                      <span className="original-price">₹62,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205400%20Touch%20i5%2F8th%2F8GB%2F256GB%20(₹20,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205400%20Touch%20i5%2F8th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -574,15 +556,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span class="current-price">₹18,999</span>
-                      <span className="original-price">₹55,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205480%20i7%2F6th%2F8GB%2F256GB%20(₹18,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205480%20i7%2F6th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -614,15 +593,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹25,999</span>
-                      <span className="original-price">₹72,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%203420%20i5%2F11th%2F8GB%2F256GB%20(₹25,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%203420%20i5%2F11th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -654,15 +630,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹27,999</span>
-                      <span className="original-price">₹85,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20840%20G7%20i5%2F10th%2F8GB%2F256GB%20(₹27,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20840%20G7%20i5%2F10th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -694,15 +667,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹28,999</span>
-                      <span className="original-price">₹88,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20830%20G7%20i5%2F10th%2F16GB%2F256GB%20(₹28,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20830%20G7%20i5%2F10th%2F16GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -734,15 +704,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹33,999</span>
-                      <span className="original-price">₹98,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G8%20i7%2F11th%2F16GB%2F512GB%20(₹33,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G8%20i7%2F11th%2F16GB%2F512GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -774,15 +741,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹15,999</span>
-                      <span className="original-price">₹45,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20440%20G3%20i5%2F6th%2F8GB%2F256GB%20(₹15,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20440%20G3%20i5%2F6th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -814,15 +778,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹19,999</span>
-                      <span className="original-price">₹58,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G5%20i5%2F8th%2F8GB%2F256GB%20(₹19,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G5%20i5%2F8th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -854,15 +815,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹26,999</span>
-                      <span className="original-price">₹85,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i7%2F8th%2F16GB%2F256GB%20(₹26,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i7%2F8th%2F16GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -894,15 +852,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹22,999</span>
-                      <span className="original-price">₹72,000 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i5%2F8th%2F8GB%2F256GB%20(₹22,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i5%2F8th%2F8GB%2F256GB."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
@@ -934,15 +889,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="product-footer">
-                    <div className="price-box">
-                      <span className="current-price">₹7,999</span>
-                      <span className="original-price">₹18,500 Original</span>
-                    </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%2024%20inch%20IPS%20Monitor%20(₹7,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%2024%20inch%20IPS%20Monitor."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
+                      style={{ width: '100%', textAlign: 'center' }}
                       onClick={handleBuyNow}
                     >
                       Buy Now
