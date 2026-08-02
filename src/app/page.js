@@ -992,6 +992,35 @@ export default function Home() {
                   Get Networking Quote
                 </a>
               </div>
+
+              <div className="service-card">
+                <div className="service-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 className="service-title">4. PC or Desktop Repair</h3>
+                <p className="service-description">
+                  Custom PC building, desktop motherboard &amp; power supply (SMPS) servicing, graphic card upgrades, and hardware repair for office &amp; gaming desktops.
+                </p>
+                <ul className="service-features">
+                  <li className="service-feature-item">✓ Custom PC &amp; Gaming Rig Assembly</li>
+                  <li className="service-feature-item">✓ SMPS Power Supply &amp; Motherboard Repair</li>
+                  <li className="service-feature-item">✓ GPU &amp; CPU Thermal Pasting / Upgrades</li>
+                  <li className="service-feature-item">✓ Cabinet Cleaning &amp; Cooling Fan Servicing</li>
+                </ul>
+                <a
+                  href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20inquire%20about%20PC%20or%20Desktop%20Repair%20Services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary btn-sm service-btn"
+                  onClick={handleBuyNow}
+                >
+                  Book Desktop Repair
+                </a>
+              </div>
             </div>
           </div>
         </section>
