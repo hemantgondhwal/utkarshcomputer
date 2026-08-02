@@ -925,7 +925,15 @@ export default function Home() {
                   <li className="service-feature-item">✓ Motherboard Chip-Level Servicing</li>
                   <li className="service-feature-item">✓ Keyboard &amp; Liquid Damage Fixes</li>
                 </ul>
-                <a href="#quote" className="btn btn-secondary btn-sm service-btn">Book Repair Quote</a>
+                <a
+                  href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20inquire%20about%20Laptop%20Repair%20Services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary btn-sm service-btn"
+                  onClick={handleBuyNow}
+                >
+                  Book Repair Quote
+                </a>
               </div>
 
               <div className="service-card">
@@ -945,7 +953,15 @@ export default function Home() {
                   <li className="service-feature-item">✓ Data Backup &amp; Hard Drive Recovery</li>
                   <li className="service-feature-item">✓ Office Suite &amp; Driver Optimization</li>
                 </ul>
-                <a href="#quote" className="btn btn-secondary btn-sm service-btn">Request Software Help</a>
+                <a
+                  href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20inquire%20about%20Software%20Solutions%20%26%20Setup."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary btn-sm service-btn"
+                  onClick={handleBuyNow}
+                >
+                  Request Software Help
+                </a>
               </div>
 
               <div className="service-card">
@@ -966,7 +982,15 @@ export default function Home() {
                   <li className="service-feature-item">✓ Network Security &amp; Firewall Config</li>
                   <li className="service-feature-item">✓ Office &amp; Home Network Troubleshooting</li>
                 </ul>
-                <a href="#quote" className="btn btn-secondary btn-sm service-btn">Setup Network Service</a>
+                <a
+                  href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20inquire%20about%20Networking%20Services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary btn-sm service-btn"
+                  onClick={handleBuyNow}
+                >
+                  Get Networking Quote
+                </a>
               </div>
             </div>
           </div>
