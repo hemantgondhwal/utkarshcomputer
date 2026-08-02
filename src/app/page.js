@@ -311,43 +311,195 @@ export default function Home() {
             </p>
 
             <div className="products-grid">
-              {/* Product 1 */}
+              {/* Product 1: Dell Precision 5550 */}
               <article className="product-card">
                 <div className="product-img-box">
-                  <span className="savings-tag">Save 61%</span>
+                  <span className="savings-tag">Workstation • 4GB GPU</span>
+                  <img src="/images/dell_precision.png" alt="Dell Precision 5550 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Precision 5550</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect></svg>
+                      <span>Intel Core i7 (10th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB NVMe SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                      <span>4GB Dedicated Graphics Card</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹38,999</span>
+                      <span className="original-price">₹1,15,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Precision%205550%20i7%2F10th%2F8GB%2F256GB%204GB%20GPU%20(₹38,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 2: Dell Latitude 5430 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">12th Gen • 16GB / 512GB</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 5430 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Latitude 5430</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i7 (12th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>16GB DDR4 RAM</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                      <span>512GB NVMe SSD</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹34,999</span>
+                      <span className="original-price">₹95,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205430%20i7%2F12th%2F16GB%2F512GB%20(₹34,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 3: Dell Latitude 5420 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">11th Gen • i5</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 5420 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Latitude 5420</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (11th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB DDR4 RAM</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                      <span>256GB NVMe SSD</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹26,999</span>
+                      <span className="original-price">₹75,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205420%20i5%2F11th%2F8GB%2F256GB%20(₹26,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 4: Dell Latitude 5410 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">10th Gen • i5</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 5410 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Latitude 5410</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (10th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB DDR4 RAM</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                      <span>256GB NVMe SSD</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹23,999</span>
+                      <span className="original-price">₹68,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205410%20i5%2F10th%2F8GB%2F256GB%20(₹23,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 5: Dell Latitude 7490 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Touch / Non-Touch Option</span>
                   <img src="/images/dell_latitude.png" alt="Dell Latitude 7490 Laptop" />
                 </div>
                 <div className="product-content">
                   <h3 className="product-title">Dell Latitude 7490</h3>
                   <div className="product-specs">
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                        <rect x="9" y="9" width="6" height="6"></rect>
-                      </svg>
-                      <span>Intel Core i7 (8th Gen) @ 1.90 GHz</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (8th Gen)</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path>
-                      </svg>
-                      <span>16GB DDR4 High-Speed RAM</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="22" y1="12" x2="2" y2="12"></line>
-                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                      </svg>
-                      <span>512GB NVMe M.2 Solid State Drive</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Touchscreen / Non-Touch Options</span>
                     </div>
                   </div>
                   <div className="product-footer">
                     <div className="price-box">
-                      <span className="current-price">₹28,999</span>
-                      <span className="original-price">₹74,999 Original</span>
+                      <span className="current-price">₹21,999</span>
+                      <span className="original-price">₹65,000 Original</span>
                     </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%207490%20(₹28,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%207490%20i5%2F8th%2F8GB%2F256GB%20(₹21,999)."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
@@ -359,43 +511,195 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Product 2 */}
+              {/* Product 6: Dell Latitude 5400 Touch */}
               <article className="product-card">
                 <div className="product-img-box">
-                  <span className="savings-tag">Save 62%</span>
-                  <img src="/images/lenovo_thinkpad.png" alt="Lenovo ThinkPad T480 Laptop" />
+                  <span className="savings-tag">Touch Screen</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 5400 Touch Laptop" />
                 </div>
                 <div className="product-content">
-                  <h3 className="product-title">Lenovo ThinkPad T480</h3>
+                  <h3 className="product-title">Dell Latitude 5400 Touch</h3>
                   <div className="product-specs">
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                        <rect x="9" y="9" width="6" height="6"></rect>
-                      </svg>
-                      <span>Intel Core i5 (8th Gen) @ 1.70 GHz</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (8th Gen)</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path>
-                      </svg>
-                      <span>16GB DDR4 RAM</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="22" y1="12" x2="2" y2="12"></line>
-                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                      </svg>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg>
+                      <span>FHD Touchscreen Display</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹20,999</span>
+                      <span className="original-price">₹62,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205400%20Touch%20i5%2F8th%2F8GB%2F256GB%20(₹20,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 7: Dell Latitude 5480 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Budget i7</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 5480 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Latitude 5480</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i7 (6th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Durable Enterprise Chassis</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span class="current-price">₹18,999</span>
+                      <span className="original-price">₹55,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%205480%20i7%2F6th%2F8GB%2F256GB%20(₹18,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 8: Dell Latitude 3420 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">11th Gen • Modern Design</span>
+                  <img src="/images/dell_latitude.png" alt="Dell Latitude 3420 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell Latitude 3420</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (11th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB NVMe SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg>
+                      <span>HD Anti-Glare Display</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹25,999</span>
+                      <span className="original-price">₹72,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%20Latitude%203420%20i5%2F11th%2F8GB%2F256GB%20(₹25,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 9: HP EliteBook 840 G7 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">10th Gen • Premium Aluminum</span>
+                  <img src="/images/hp_elitebook.png" alt="HP EliteBook 840 G7 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">HP EliteBook 840 G7</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (10th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB NVMe SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Bang & Olufsen Premium Audio</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹27,999</span>
+                      <span className="original-price">₹85,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20840%20G7%20i5%2F10th%2F8GB%2F256GB%20(₹27,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 10: HP EliteBook 830 G7 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">10th Gen • 16GB RAM</span>
+                  <img src="/images/hp_elitebook.png" alt="HP EliteBook 830 G7 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">HP EliteBook 830 G7</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (10th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>16GB High-Speed RAM</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
                       <span>256GB NVMe SSD</span>
                     </div>
                   </div>
                   <div className="product-footer">
                     <div className="price-box">
-                      <span className="current-price">₹24,999</span>
-                      <span className="original-price">₹65,999 Original</span>
+                      <span className="current-price">₹28,999</span>
+                      <span className="original-price">₹88,000 Original</span>
                     </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T480%20(₹24,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20830%20G7%20i5%2F10th%2F16GB%2F256GB%20(₹28,999)."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
@@ -407,43 +711,235 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Product 3 */}
+              {/* Product 11: HP ProBook 640 G8 */}
               <article className="product-card">
                 <div className="product-img-box">
-                  <span className="savings-tag">Save 63%</span>
-                  <img src="/images/hp_elitebook.png" alt="HP EliteBook 840 G5 Laptop" />
+                  <span className="savings-tag">11th Gen i7 • 16GB / 512GB</span>
+                  <img src="/images/hp_elitebook.png" alt="HP ProBook 640 G8 Laptop" />
                 </div>
                 <div className="product-content">
-                  <h3 className="product-title">HP EliteBook 840 G5</h3>
+                  <h3 className="product-title">HP ProBook 640 G8</h3>
                   <div className="product-specs">
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                        <rect x="9" y="9" width="6" height="6"></rect>
-                      </svg>
-                      <span>Intel Core i7 (8th Gen) @ 1.90 GHz</span>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i7 (11th Gen)</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path>
-                      </svg>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
                       <span>16GB DDR4 RAM</span>
                     </div>
                     <div className="spec-item">
-                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="22" y1="12" x2="2" y2="12"></line>
-                        <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
-                      </svg>
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
                       <span>512GB NVMe SSD</span>
                     </div>
                   </div>
                   <div className="product-footer">
                     <div className="price-box">
-                      <span className="current-price">₹22,999</span>
-                      <span className="original-price">₹61,999 Original</span>
+                      <span className="current-price">₹33,999</span>
+                      <span className="original-price">₹98,000 Original</span>
                     </div>
                     <a
-                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20EliteBook%20840%20G5%20(₹22,999)."
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G8%20i7%2F11th%2F16GB%2F512GB%20(₹33,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 12: HP ProBook 440 G3 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Super Budget Choice</span>
+                  <img src="/images/hp_elitebook.png" alt="HP ProBook 440 G3 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">HP ProBook 440 G3</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (6th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Student Budget Friendly</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹15,999</span>
+                      <span className="original-price">₹45,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20440%20G3%20i5%2F6th%2F8GB%2F256GB%20(₹15,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 13: HP ProBook 640 G5 */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">8th Gen • Reliable Performance</span>
+                  <img src="/images/hp_elitebook.png" alt="HP ProBook 640 G5 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">HP ProBook 640 G5</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (8th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Full HD Display</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹19,999</span>
+                      <span className="original-price">₹58,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20HP%20ProBook%20640%20G5%20i5%2F8th%2F8GB%2F256GB%20(₹19,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 14: Lenovo ThinkPad T490s (i7) */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Ultra Slim • i7 / 16GB</span>
+                  <img src="/images/lenovo_thinkpad.png" alt="Lenovo ThinkPad T490s i7 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Lenovo ThinkPad T490s (i7)</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i7 (8th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>16GB RAM | 256GB NVMe SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Military-Grade Durability</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹26,999</span>
+                      <span className="original-price">₹85,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i7%2F8th%2F16GB%2F256GB%20(₹26,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 15: Lenovo ThinkPad T490s (i5) */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Ultra Slim • i5</span>
+                  <img src="/images/lenovo_thinkpad.png" alt="Lenovo ThinkPad T490s i5 Laptop" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Lenovo ThinkPad T490s (i5)</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
+                      <span>Intel Core i5 (8th Gen)</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M6 8V5M10 8V5M14 8V5M18 8V5M2 8h20v8H2z"></path></svg>
+                      <span>8GB RAM | 256GB SSD</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Ergonomic Keyboard & TrackPoint</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹22,999</span>
+                      <span className="original-price">₹72,000 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Lenovo%20ThinkPad%20T490s%20i5%2F8th%2F8GB%2F256GB%20(₹22,999)."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-sm add-to-cart-btn"
+                      onClick={handleBuyNow}
+                    >
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              {/* Product 16: Dell 24-inch IPS Monitor */}
+              <article className="product-card">
+                <div className="product-img-box">
+                  <span className="savings-tag">Full HD IPS Display</span>
+                  <img src="/images/dell_monitor.png" alt="Dell 24 inch IPS Monitor" />
+                </div>
+                <div className="product-content">
+                  <h3 className="product-title">Dell 24" IPS Full HD Monitor</h3>
+                  <div className="product-specs">
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                      <span>24-Inch Full HD (1920x1080) IPS Panel</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <span>Ultra-Slim Bezel & Wide Viewing Angle</span>
+                    </div>
+                    <div className="spec-item">
+                      <svg className="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                      <span>HDMI & DisplayPort Connectivity</span>
+                    </div>
+                  </div>
+                  <div className="product-footer">
+                    <div className="price-box">
+                      <span className="current-price">₹7,999</span>
+                      <span className="original-price">₹18,500 Original</span>
+                    </div>
+                    <a
+                      href="https://wa.me/918700747243?text=Hello%20Utkarsh%20Computers%2C%20I%20want%20to%20buy%20Dell%2024%20inch%20IPS%20Monitor%20(₹7,999)."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary btn-sm add-to-cart-btn"
