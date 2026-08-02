@@ -1150,7 +1150,7 @@ export default function Home() {
                       <input
                         type="email"
                         className="form-input"
-                        placeholder="e.g. info@utkarshcomputers.com"
+                        placeholder="e.g. Utkarshcomputers2011@gmail.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       />
@@ -1246,7 +1246,7 @@ export default function Home() {
                   📞 <a href="tel:+918700747243">+91 87007 47243</a>
                 </li>
                 <li className="contact-item">
-                  ✉️ <a href="mailto:info@utkarshcomputers.com">info@utkarshcomputers.com</a>
+                  ✉️ <a href="mailto:Utkarshcomputers2011@gmail.com">Utkarshcomputers2011@gmail.com</a>
                 </li>
               </ul>
             </div>
